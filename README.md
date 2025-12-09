@@ -64,21 +64,6 @@ Execute a interface integrada para fluxo completo:
 ```zsh
 python3 inteface.py
 ```
-Dependendo da implementação, você poderá escolher baixar uma imagem, aplicar filtros e salvar resultados em sequência.
-
-## Organização e boas práticas
-- Mantenha as imagens de entrada/saída na pasta `Trab_Final` ou especifique caminhos completos.
-- Evite sobrescrever arquivos sem necessidade; utilize `--out` para nomear resultados.
-- Versione apenas código e exemplos mínimos; arquivos gerados podem ser grandes.
-
-## Desenvolvimento
-- Formatação sugerida: `black` e `flake8` (opcional).
-- Testes rápidos podem ser feitos com imagens pequenas para acelerar a execução.
-
-## Próximos passos
-- Documentar todos os filtros disponíveis com parâmetros.
-- Adicionar exemplos com imagens de exemplo e resultados.
-- Opcional: criar interface gráfica com `tkinter` ou `PySimpleGUI`.
 
 ## Licença
 Projeto acadêmico destinado ao aprendizado. Verifique o repositório principal para políticas específicas.
