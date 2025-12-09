@@ -5,10 +5,10 @@
 Este projeto reúne scripts para baixar imagens, aplicar filtros e manipular arquivos de imagem por meio de uma interface simples. Foi desenvolvido como trabalho final da disciplina de Laboratório de Programação (P3).
 
 ## Estrutura
-- `download.py`: Faz o download de uma imagem a partir de uma URL e salva localmente.
-- `Filtros.py`: Implementa filtros e transformações na imagem carregada. (ex.: escala de cinza, negativo, brilho/contraste, blur, etc.).
+- `download.py`: Classe para fazer downloads no programa principal.
+- `Filtros.py`: Classes para aplicar os filtros na imagem no programa principal. (ex.: escala de cinza, negativo, brilho/contraste, blur, etc.).
 - `imagem.py`: Classe imagem para ser utilizada no resto do programa.
-- `inteface.py`: Interface principal (GUI) que integra download e filtros para uso pelo usuário.
+- `inteface.py`: Interface principal (GUI) que integra download, filtros e imagem para uso pelo usuário.
 - `download_temp.png`: Arquivo temporário/resultado gerado por `download.py` (pode variar).
 
 ## Pré-requisitos
