@@ -21,7 +21,7 @@ Este projeto reúne scripts para baixar imagens, aplicar filtros e manipular arq
 Instale as dependências:
 
 ```zsh
-pip install pillow requests
+pip install pillow requests tkinter
 ```
 
 ## Uso
