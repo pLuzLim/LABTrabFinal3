@@ -18,11 +18,9 @@ Este projeto reúne scripts para baixar imagens, aplicar filtros e manipular arq
   - `requests` para download de arquivos
   - `tkinter` para a GUI
 
-Instale as dependências (ajuste conforme necessário):
+Instale as dependências:
 
 ```zsh
-python3 -m venv .venv
-source .venv/bin/activate
 pip install pillow requests
 ```
 
