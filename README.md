@@ -9,7 +9,7 @@ Este projeto reúne scripts para baixar imagens, aplicar filtros e manipular arq
 - `Filtros.py`: Classes para aplicar os filtros na imagem no programa principal. (ex.: escala de cinza, negativo, brilho/contraste, blur, etc.).
 - `imagem.py`: Classe imagem para ser utilizada no resto do programa.
 - `inteface.py`: Interface principal (GUI) que integra download, filtros e imagem para uso pelo usuário.
-- `download_temp.png`: Arquivo temporário/resultado gerado por `download.py` (pode variar).
+- `download_temp.png`: Arquivo temporário/resultado gerado pelos testes iniciais.
 
 ## Pré-requisitos
 - Python 3.8+
