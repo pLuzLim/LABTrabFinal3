@@ -1,10 +1,4 @@
-## Para executar:
-### Abra e execute o arquivo "inteface.py"
-### Siga a interface para o resto.
 
-- "Carregar Imagem" após inserir o link/escolher o arquivo.
-
-### O resultado é salvo na mesma pasta.
 ------
 # Projeto: Processamento de Imagens — Trab_Final
 
@@ -12,16 +6,17 @@ Este projeto reúne scripts para baixar imagens, aplicar filtros e manipular arq
 
 ## Estrutura
 - `download.py`: Faz o download de uma imagem a partir de uma URL e salva localmente.
-- `Filtros.py`: Implementa filtros e transformações (ex.: escala de cinza, negativo, brilho/contraste, blur, etc.).
-- `imagem.py`: Funções utilitárias para abrir, salvar e converter imagens; pode encapsular operações comuns.
-- `inteface.py`: Interface principal (CLI/GUI) que integra download e filtros para uso pelo usuário.
+- `Filtros.py`: Implementa filtros e transformações na imagem carregada. (ex.: escala de cinza, negativo, brilho/contraste, blur, etc.).
+- `imagem.py`: Classe imagem para ser utilizada no resto do programa.
+- `inteface.py`: Interface principal (GUI) que integra download e filtros para uso pelo usuário.
 - `download_temp.png`: Arquivo temporário/resultado gerado por `download.py` (pode variar).
 
 ## Pré-requisitos
 - Python 3.8+
-- Bibliotecas sugeridas:
+- Bibliotecas utilizadas:
   - `Pillow` (PIL) para manipulação de imagens
   - `requests` para download de arquivos
+  - `tkinter` para a GUI
 
 Instale as dependências (ajuste conforme necessário):
 
@@ -32,38 +27,19 @@ pip install pillow requests
 ```
 
 ## Uso
-### 1) Baixar uma imagem
-Baixe uma imagem pela URL e salve em `download_temp.png`:
-```zsh
-python3 download.py --url "https://exemplo.com/arquivo.png" --out download_temp.png
-```
-Parâmetros comuns:
-- `--url`: URL da imagem a ser baixada.
-- `--out`: caminho do arquivo de saída (opcional; padrão pode ser `download_temp.png`).
-
-### 2) Aplicar filtros
-Aplique um filtro sobre uma imagem de entrada e salve a saída:
-```zsh
-python3 Filtros.py --input download_temp.png --filtro "grayscale" --out resultado.png
-```
-Exemplos de filtros (podem variar conforme implementação):
-- `grayscale`
-- `negative`
-- `brightness --valor 20`
-- `contrast --valor 15`
-- `blur --raio 2`
-
-### 3) Operações gerais de imagem
-Utilize utilitários (caso disponíveis) para conversão ou ajustes:
-```zsh
-python3 imagem.py --input download_temp.png --op "resize" --largura 800 --altura 600 --out redimensionada.png
-```
-
-### 4) Interface principal
-Execute a interface integrada para fluxo completo:
+### 1) Interface principal
+Execute a interface integrada.
 ```zsh
 python3 inteface.py
 ```
+### 2) Carregando imagens
+Para carregar as imagens para aplicar o filtro, ou selecione uma dentro do seu dispositivo com o botão de "Selecionar Arquivo" ou copie o URL da imagem na caixa.
+Selecione "Carregar Imagem" para carregar ela.
+
+### 3) Adicionando Filtros
+Selecione o filtro que quer aplicar e aperte o botão de aplicar.
+Para o blur, pode escolher a intensidade.
+Imagem resultante é salva na pasta do programa.
 
 ## Licença
 Projeto acadêmico destinado ao aprendizado. Verifique o repositório principal para políticas específicas.
